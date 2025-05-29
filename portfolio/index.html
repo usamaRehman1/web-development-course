@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="navBar">
+            <a href="#home" id="homeIcon">
+                <span><i class="fa-solid fa-house" style="font-size: 25px;"></i></span>
+                <span>Home</span>
+            </a>
+            <a href="#about" id="aboutIcon">
+                <span><i class="fa-solid fa-user" style="font-size: 25px;"></i></span>
+                <span>About</span>
+            </a>
+            <a href="#projects" id="projectsIcon">
+                <span><i class="fa-solid fa-diagram-project" style="font-size: 25px;"></i></span>
+                <span>Projects</span>
+            </a>
+            <a href="#contact" id="contactIcon">
+                <span><i class="fa-solid fa-envelope" style="font-size: 25px;"></i></span>
+                <span>Contact</span>
+            </a>
+        </div>
+
+        <div id="pages">
+
+            <div id="home">
+                <div id="profileDetail">
+                    <div class="profileDetailText">
+                        <h2>Hi, <br /> I'am <span style="color: #113f67;;">Usama</span> <br /> Web Developer</h2>
+                        <button class="resume-btn">Download Resume</button>
+                    </div>
+
+                </div>
+                <div id="profileImage">
+                    <div class="imageBox">
+                        <img src="./assets/profile-img-removebg-preview.png"
+                            style="background-size: contain; width: 100%; height: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="about">
+                <h1>Muhammad Usama</h1>
+                <hr style="color: #113f67; width: 35%;  margin-top: 5px;" />
+                <p>
+                    Seeking an environment where my experience and knowledge can be exploited and enriched
+                    also looking for opportunity to work with dynamic professionals. If given an opportunity
+                    I will go that extra mile. I can contribute my year of experience in this field and can
+                    be effectively used growth and profitability of the organization on a macro level.
+                </p>
+                <h1>Skills</h1>
+                <hr style="color: #113f67; width: 15%;  margin-top: 5px;" />
+                <h3>Web Designing</h3>
+                <div class="web-design">
+                    <div class="web-design-fill">70%</div>
+                </div>
+                <h3>Web Development</h3>
+                <div class="web-development">
+                    <div class="web-development-fill">80%</div>
+                </div>
+                <h3>Ms Office</h3>
+                <div class="office">
+                    <div class="office-fill">50%</div>
+                </div>
+
+                <h1>Language</h1>
+
+                <hr style="color: #113f67; width: 25%; margin-top: 5px;" />
+                <ul>
+                    <li>English</li>
+                    <li>Urdu</li>
+                </ul>
+            </div>
+
+            <div id="projects">
+                <h1>Project Page</h1>
+                <hr style="color: #113f67; width: 25%;  margin-top: 5px;" />
+                <div class="projectsCard">
+                    <i class="fa-solid fa-less-than card-slider-icon"></i>
+
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                                <a href="https://www.google.com/">click for view</a>
+                            </p>
+                            <button class="card-btn">View Code</button>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                                <a href="https://www.google.com/">click for view</a>
+                            </p>
+                            <button class="card-btn">View Code</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                                <a href="https://www.google.com/">click for view</a>
+                            </p>
+                            <button class="card-btn">View Code</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-greater-than card-slider-icon"></i>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1>Contact Me</h1>
+                <hr style="color: #113f67; width: 25%;  margin-top: 5px;" />
+                <div class="icons">
+                    <a href="https://www.linkedin.com/feed/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="mailto: muhammadusama3902@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+
+                <h3>Let's get in touch. Send me a message:</h3>
+                <form action="" class="message-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Message">
+                    <input type="submit" value="MESSAGE SEND" class="messageBtn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
