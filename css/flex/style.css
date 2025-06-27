@@ -1,0 +1,147 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* display: flex: */
+/* Direction: Works in a single direction at a time — ( row or column ) by default flex in row direction*/
+
+/* -----------------------ROW {Horizontal (x-Axis)}---------------------------- */
+/* Row - justify-content ---> values (center, flex-start, flex-end, space-between, space-around, space-evenly) */
+/* flex-start – Items align to the start of the main axis. */
+/* flex-end – Items align to the end of the main axis. */
+/* center – Items are centered along the main axis. */
+/* space-between – Items are spaced with the first at the start and last at the end. */
+/* space-around – Items have equal space around them. */
+/* space-evenly – Items have equal space between and around them. */
+/* start – Aligns items to the start of the writing mode. */
+/* end – Aligns items to the end of the writing mode. */
+/* left – Aligns items to the left (in LTR layout). */
+/* right – Aligns items to the right (in LTR layout). */
+
+/* --------------------------Column {Vertical (y-Axis)}------------------------------ */
+/* column - align-items */
+/* align-items: stretch;  -> value stretches the flex items to fill the container */
+/* align-items: baseline; -> value positions the flex items at the baseline of the container: */
+
+/* --------------- FLEX FLOW --------------------------- */
+/* it contain two property simultaneously */
+/* flex-flow:flex-direction flex-wrap; */
+
+.flex-container {
+    border: 2px solid black;
+    height: 100vh;
+    display: flex;
+    /* ------------------- FLEX WRAP ----------------------------------- */
+    /* The flex-wrap property controls whether flex items should stay in a single line
+    or wrap onto multiple lines when there's not enough space in the container. */
+    /* nowrap (default) – All items stay on one line and may overflow. */
+    /* wrap – Items wrap onto multiple lines from top to bottom. */
+    /* wrap-reverse – Items wrap onto multiple lines from bottom to top. */
+    flex-wrap: wrap;
+    gap: 10px;
+    /*  gap - spacing between flex items  */
+    justify-content: space-around;
+    align-items: flex-end;
+    /* -------------- FLEX DIRECTION---------------------------------------- */
+    /* The flex-direction property defines the main axis direction along which flex items are placed in a flex container. */
+    /* row (default) – Items are placed left to right in a row. */
+    /* row-reverse – Items are placed right to left in a row. */
+    /* column – Items are placed top to bottom in a column. */
+    /* column-reverse – Items are placed bottom to top in a column. */
+    flex-direction: column;
+}
+
+.flex-container div {
+    width: 20%;
+    height: 200px;
+    background-color: red;
+}
+
+/* ---------------------- FLEX ITEMS --------------------- */
+
+/* ------------ ORDER ---------------- */
+/* bydefault all items at order:0; */
+
+.flex-items-conatiner {
+    border: 2px solid blue;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.flex-items-conatiner div {
+    width: 20%;
+    height: 200px;
+    background-color: green;
+    text-align: center;
+    font-size: 60px;
+}
+
+.box2 {
+    order: 1;
+}
+
+.box1 {
+    order: 2;
+}
+
+/* ------ FLEX GROW ---------- */
+/* The flex-grow property defines how much a flex item should grow relative to the other 
+in the container when extra space is available. */
+
+.box1 .box2 {
+    flex-grow: 1;
+}
+
+.box3 {
+    flex-grow: 3;
+}
+
+/* ------------- FLEX SHRINK ------------ */
+/* The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. */
+
+.box2 {
+    flex-shrink: 0;
+}
+
+/* ----------- FLEX BASIS ------------- */
+/* The flex-basis property specifies the initial length of a flex item. */
+
+.box-flex-basis {
+    flex-basis: 300px;
+}
+
+/* --------- FLEX ----------------- */
+/* The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. */
+/* flex:flex-grow flex-shrink flex-basis ; */
+
+/* ------------- ALIGN SELF--------------- */
+/* The align-self property specifies the alignment for the selected item inside the flexible container. */
+
+.box-flex-basis {
+    flex: 0 0 200px;
+}
+
+.align-self-container {
+    display: flex;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.align-self-container div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.second-box {
+    align-self: center;
+}
