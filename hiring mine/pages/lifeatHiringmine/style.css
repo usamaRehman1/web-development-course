@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------Navigation Bar ---------------------- */
+.logo {
+    margin: 10px;
+}
+
+.employee-link {
+    color: #6851ff !important;
+}
+
+.employee-link:hover {
+    color: #6250da !important;
+}
+
+.theme-toggle {
+    font-size: 45px;
+    position: absolute;
+    right: 100px;
+}
+
+/* -------- center section -------------- */
+
+.center-container {
+    width: 100%;
+}
+
+.center-container h1 {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+/* -----------Life at hiringMine -------- */
+.life-at-hiringmine img {
+    width: 100%;
+}
+
+/* -------------Team Card ----------------- */
+.team-detail-card {
+    width: 85%;
+    margin: 20px auto;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    /* height: 440px; */
+    padding: 20px 40px;
+}
+
+.team-detail-card .card-image {
+    width: 30%;
+}
+
+.team-detail-card .card-image img {
+    margin: 20px;
+    border-radius: 5px;
+    width: 70%;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.team-detail-card .card-text {
+    width: 70%;
+}
+
+.card-text p {
+    color: #555;
+}
+
+/* ----------------------Team Member ------------------- */
+.team_member {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.first_member,
+.second_member,
+.third_member,
+.fourth_member {
+    height: 200px;
+
+}
+
+.first_member img,
+.second_member img,
+.third_member img,
+.fourth_member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+/* ---------- culture -------------- */
+.profile-container {
+    width: 200px;
+    text-align: center;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #555;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ---------------------- Image Gallery -------------------- */
+.img-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    gap: 10px;
+}
+
+.img-gallery div {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.img-gallery div img:hover {
+    transform: scale(1.1)
+}
+
+.img1 {
+    grid-column: 7 /span 3;
+    grid-row: 1 / span 3;
+}
+
+.img2 {
+    grid-column: 4 /span 3;
+    grid-row: 2 / span 2;
+}
+
+.img3 {
+    grid-column: 1 /span 3;
+    grid-row: 3 / span 2;
+}
+
+.img5 {
+    grid-column: 4 /span 5;
+    grid-row: 4 / span 3;
+}
+
+.img6 {
+    grid-column: 9 /span 2;
+    grid-row: 4;
+}
+
+.img7 {
+    grid-column: 1 /span 3;
+    grid-row: 5 / span 2;
+
+}
+
+.img8 {
+    grid-column: 9 /span 2;
+    grid-row: 5 / span 3;
+}
+
+.img9 {
+    grid-column: 3 /span 3;
+    grid-row: 7 / span 3;
+}
+
+.img10 {
+    grid-column: 6 /span 3;
+    grid-row: 7 / span 3;
+}
+
+/* ----------------------Bottom section ---------------------------- */
+
+.bottom-section {
+    margin-top: 50px;
+    width: 100%;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    color: #ffff;
+    font-family: Roboto, sans-serif;
+}
+
+.bottom-section div {
+    padding: 50px 20px;
+}
+
+.nine-section .bottom-message {
+    width: 40%;
+    height: 360px;
+}
+
+.bottom-section .bottom-contact {
+    width: 30%;
+    height: 360px;
+}
+
+.bottom-section .footer {
+    border-top: 1px solid rgb(241, 239, 239);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+
+/* Media curies handling */
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    .center-container h1 {
+        width: 65%;
+        font-size: 25px;
+    }
+
+    /* -------------Team Card ----------------- */
+    .team-detail-card {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 20px;
+        text-align: center;
+
+    }
+
+    .team-detail-card .card-image {
+        width: 100%;
+    }
+
+    .team-detail-card .card-text {
+        width: 100%;
+    }
+
+    /* ----------------------Team Member ------------------- */
+    .team_member {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* ------------------------- bottom section----------------------- */
+    .bottom-section div {
+        padding: 20px 10px;
+        display: block;
+    }
+
+    .bottom-section .bottom-message {
+        width: 100%;
+        height: 360px;
+    }
+
+    .bottom-section .bottom-contact {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* ---------------------- Image Gallery -------------------- */
+    .img-gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        gap: 10px;
+    }
+
+    .img1 {
+        grid-column: 1 /span 10;
+        grid-row: 1 / span 2;
+    }
+
+    .img2 {
+        grid-column: 1 /span 10;
+        grid-row: 3 / span 2;
+    }
+
+    .img3 {
+        grid-column: 1 /span 10;
+        grid-row: 5 / span 2;
+    }
+
+    .img5 {
+        grid-column: 1 /span 10;
+        grid-row: 7 / span 2;
+    }
+
+    .img6 {
+        grid-column: 1 /span 10;
+        grid-row: 9 / span 2;
+    }
+
+    .img7 {
+        grid-column: 1 /span 10;
+        grid-row: 11 / span 2;
+
+    }
+
+    .img8 {
+        grid-column: 1 /span 10;
+        grid-row: 13 / span 2;
+    }
+
+    .img9 {
+        grid-column: 1 /span 10;
+        grid-row: 15 / span 2;
+    }
+
+    .img10 {
+        grid-column: 1 /span 10;
+        grid-row: 17 / span 2;
+    }
+
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    .center-container h1 {
+        width: 65%;
+        font-size: 30px;
+    }
+
+    /* -------------Team Card ----------------- */
+    .team-detail-card {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px 20px;
+        text-align: center;
+
+    }
+
+    .team-detail-card .card-image {
+        width: 100%;
+    }
+
+    .team-detail-card .card-text {
+        width: 100%;
+    }
+
+    /* ----------------------Team Member ------------------- */
+    .team_member {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* ------------------------- bottom section----------------------- */
+    .bottom-section div {
+        padding: 10px 5px;
+        display: block;
+    }
+
+    .bottom-section .bottom-message {
+        width: 100%;
+        height: 360px;
+    }
+
+    .bottom-section .bottom-contact {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Normal */
+/* @media(min-width: 769px) and (max-width: 1200px) {} */
+
+/* Widescreen */
+/* @media(min-width: 1201px) {} */
+
+/* Landscape */
+/* @media(max-height: 500px) {} */
