@@ -24,7 +24,6 @@ function add() {
 document.writeln(`Addition Of Both Number: ${add()}`);
 
 // Task 04
-
 function calculator(num1, num2, operator) {
     if (operator === '+') {
         return num1 + num2;
@@ -123,7 +122,6 @@ function palindrome() {
 palindrome()
 
 // Task 11
-
 function capitalize(str) {
 
     let splitStrArr = str.split(" ")
@@ -134,6 +132,52 @@ function capitalize(str) {
 
     return strCapatilize;
 }
-
 let str = prompt("Enter String i will convert into capitalize:");
 alert(`Capatilize String : ${capitalize(str)}`)
+
+// Task 12 
+function checkLen(sen) {
+    let splitSen = sen.split(" ");
+    let longLen = '';
+
+    for (let i = 0; i < splitSen.length; i++) {
+        for (let j = 0; j < splitSen.length; j++) {
+            if (splitSen[i].length < splitSen[j].length ) {
+                longLen = splitSen[j]
+                splitSen[i] = longLen
+            }
+        }
+    }
+
+    return longLen
+}
+console.log(`Longest Word in the sentence is: ${checkLen("The development tutorial")}`);
+
+
+// Task 13
+function charCount(str, char) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == char) {
+            count += 1;
+        }
+    }
+    return count
+}
+console.log(`character check: ${charCount("development", 'e')}`)
+
+
+// Task 14
+function calCurcumference(radius) {
+    let circumferenceOfCircle = 2 * pi * (radius**2);
+    return `${circumferenceOfCircle}m`
+}
+
+function calArea(radius) {
+    let areaOfCircle = pi * (radius**2);
+    return `${areaOfCircle}m`;
+}
+const pi = 3.142;
+let radius = 4;
+console.log(`Circumference Of Circle = ${calCurcumference(radius)} , Area Of Circle: ${calArea(radius)}`)
