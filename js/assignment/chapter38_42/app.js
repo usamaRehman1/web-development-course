@@ -69,7 +69,6 @@ function average(sub1, sub2, sub3) {
 mainFunction();
 
 // Task 05
-
 function checkIndexOf(str) {
     let char = prompt(` String : ${str} \nWhich character will you find index ?:`)
     let strSplit = str.split("");
@@ -97,3 +96,186 @@ function checkIndexOf(str) {
     return indexNum;
 }
 checkIndexOf('development')
+
+// Task 06
+function delVowel(sen){
+    var senArr = sen.split("");
+    var i = 0 ;
+
+    while(i < senArr.length){
+
+        switch(senArr[i]){
+            case "a" :
+                senArr.splice(i,1)
+                break;
+            case "e" :
+                senArr.splice(i,1)
+                break;
+            case "i" :
+                senArr.splice(i,1)
+                break;
+            case "o" :
+                senArr.splice(i,1)
+                break;
+            case "u" :
+                senArr.splice(i,1)
+                break;            
+        }
+
+        i++;
+    }
+    let joinSen = senArr.join("");
+    return joinSen
+}
+console.log(`After removing vowel in the sentence : ${delVowel("The quick brown fox jump over the lazy dog")}`);
+
+// Task 07
+function checkTwoVowel(sen) {
+
+    let splitSen = sen.split("");
+    console.log(splitSen)
+    let towVowelArr = [];
+    let i = 0
+
+    while (i < splitSen.length) {
+        // console.log("Check Vowel =>", splitSen[i] + splitSen[i + 1])
+
+        switch (splitSen[i] + splitSen[i + 1]) {
+            case 'ae':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ea':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ai':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ia':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ao':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'oa':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'au':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ua':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ei':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ie':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'eo':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'oe':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'eu':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ue':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'io':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'oi':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'iu':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ui':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'ou':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+            case 'uo':
+                towVowelArr.push(splitSen[i] + splitSen[i + 1])
+                break;
+        }
+        i++;
+    }
+    let joinTwoVowelArr = towVowelArr.join(",");
+    return joinTwoVowelArr
+}
+console.log(`Two vowel combine => ${checkTwoVowel("Please read this application and give me gratuity")}`)
+
+// Task 08
+// Distance convert kilometer into meter 1km = 1000m
+function distanceMeter(d) {
+    var meter = d * 1000;
+    return meter;
+}
+
+// Distance convert kilometer into feet 1km = (1000*0.35)ft
+function distanceFeet(d) {
+    var feet = (d * 1000) * 0.35;
+    return feet;
+}
+
+// Distance convert kilometer into inch 1km = (1000*39.37)inch
+function distanceInche(d) {
+    var inche = (d * 1000) * 39.37;
+    return inche;
+}
+
+// Distance convert kilometer into centimeter 1km = (1000*100)cm
+function distanceCentimeter(d) {
+    var centimeter = (d * 1000) * 100;
+    return centimeter;
+}
+
+var distance = +prompt("Enter Distance in km : ");
+document.writeln(`Distance in meter : ${distanceMeter(distance)}m<br>
+Distance in Feet : ${distanceFeet(distance)}ft<br>
+Distance in Inche : ${distanceInche(distance)}inche<br>
+Distance in Centimeter : ${distanceCentimeter(distance)}cm`); 
+
+// Task 09
+function overTimePay(hr) {
+
+    return (hr > 40) ? (hr-40) * 12 : 0;
+}
+let hr = +prompt("How many hours you work this month :");
+console.log(`Over time of this month is: ${overTimePay(hr)}Rs`)
+
+// Task 10
+function cashierChange(payment) {
+    let thoushand = 0, hundred = 0, fifty = 0, ten = 0;
+    let check = 0;
+
+    let i = 0;
+    while (i <= payment) {
+        check += 1
+
+        if (check == 10) {
+            ten += 1
+            check = 0
+            if (ten == 5) {
+                fifty += 1
+                ten = 0
+                if (fifty == 2) {
+                    hundred += 1;
+                    fifty = 0
+                    if (hundred == 10) {
+                        thoushand += 1
+                        hundred = 0
+                    }
+                }
+            }
+        }
+        i++;
+    }
+    return `You will have ${thoushand} thousand notes ${hundred} Hundred notes ${fifty} Fifty notes ${ten} Ten notes`
+}
+let payment = +prompt("Enter amount to withdraw:")
+console.log(cashierChange(payment))
