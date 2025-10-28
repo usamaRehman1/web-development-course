@@ -1,0 +1,142 @@
+[
+    {
+        "menuName": "Cheese Omelette",
+        "menuPrice": 450,
+        "menuURL": "https://your-domain.com/images/omelette.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Three-egg omelette stuffed with melted cheese, served with toast and butter."
+    },
+    {
+        "menuName": "Paratha & Chai",
+        "menuPrice": 250,
+        "menuURL": "https://your-domain.com/images/paratha-chai.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Crispy hot paratha served with a cup of traditional doodh patti chai."
+    },
+    {
+        "menuName": "French Toast",
+        "menuPrice": 400,
+        "menuURL": "https://your-domain.com/images/french-toast.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Golden-brown French toast topped with honey and powdered sugar."
+    },
+    {
+        "menuName": "Pancakes with Syrup",
+        "menuPrice": 480,
+        "menuURL": "https://your-domain.com/images/pancakes.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Stack of fluffy pancakes served with butter and maple syrup."
+    },
+    {
+        "menuName": "Halwa Puri",
+        "menuPrice": 350,
+        "menuURL": "https://your-domain.com/images/halwa-puri.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Traditional Pakistani breakfast combo with puri, chana, and sweet halwa."
+    },
+    {
+        "menuName": "Aloo Paratha",
+        "menuPrice": 300,
+        "menuURL": "https://your-domain.com/images/aloo-paratha.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Soft paratha stuffed with spiced mashed potatoes, served with yogurt."
+    },
+    {
+        "menuName": "Boiled Eggs & Toast",
+        "menuPrice": 320,
+        "menuURL": "https://your-domain.com/images/eggs-toast.jpg",
+        "menuType": "Breakfast",
+        "menuDetail": "Two perfectly boiled eggs served with crispy buttered toast."
+    },
+    {
+        "menuName": "Chicken Biryani",
+        "menuPrice": 600,
+        "menuURL": "https://your-domain.com/images/chicken-biryani.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Fragrant basmati rice cooked with spiced chicken and aromatic masala."
+    },
+    {
+        "menuName": "Beef Karahi",
+        "menuPrice": 950,
+        "menuURL": "https://your-domain.com/images/beef-karahi.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Tender beef chunks cooked in tomato-based gravy with green chilies and spices."
+    },
+    {
+        "menuName": "Chicken Handi",
+        "menuPrice": 850,
+        "menuURL": "https://your-domain.com/images/chicken-handi.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Creamy chicken curry cooked in a traditional clay handi for rich flavor."
+    },
+    {
+        "menuName": "Mutton Korma",
+        "menuPrice": 1200,
+        "menuURL": "https://your-domain.com/images/mutton-korma.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Slow-cooked mutton curry in a rich blend of yogurt, nuts, and spices."
+    },
+    {
+        "menuName": "BBQ Platter",
+        "menuPrice": 1300,
+        "menuURL": "https://your-domain.com/images/bbq-platter.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "A mix of grilled chicken, beef seekh kebab, and malai boti served with naan."
+    },
+    {
+        "menuName": "Grilled Chicken Sandwich",
+        "menuPrice": 550,
+        "menuURL": "https://your-domain.com/images/chicken-sandwich.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Grilled chicken breast with lettuce, mayo, and tomato on toasted bread."
+    },
+    {
+        "menuName": "Chicken Pulao",
+        "menuPrice": 550,
+        "menuURL": "https://your-domain.com/images/chicken-pulao.jpg",
+        "menuType": "Lunch",
+        "menuDetail": "Aromatic rice cooked with chicken broth, spices, and caramelized onions."
+    },
+    {
+        "menuName": "Chocolate Shake",
+        "menuPrice": 350,
+        "menuURL": "https://your-domain.com/images/chocolate-shake.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Rich and creamy chocolate milkshake topped with whipped cream."
+    },
+    {
+        "menuName": "Strawberry Shake",
+        "menuPrice": 330,
+        "menuURL": "https://your-domain.com/images/strawberry-shake.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Fresh strawberry blended with milk and ice cream for a sweet treat."
+    },
+    {
+        "menuName": "Mango Shake",
+        "menuPrice": 300,
+        "menuURL": "https://your-domain.com/images/mango-shake.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Thick mango shake made with real mango pulp and chilled milk."
+    },
+    {
+        "menuName": "Banana Shake",
+        "menuPrice": 280,
+        "menuURL": "https://your-domain.com/images/banana-shake.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Classic banana shake blended with milk and a hint of vanilla."
+    },
+    {
+        "menuName": "Oreo Shake",
+        "menuPrice": 400,
+        "menuURL": "https://your-domain.com/images/oreo-shake.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Cookies and cream delight made with crushed Oreos and ice cream."
+    },
+    {
+        "menuName": "Cold Coffee",
+        "menuPrice": 370,
+        "menuURL": "https://your-domain.com/images/cold-coffee.jpg",
+        "menuType": "Shakes",
+        "menuDetail": "Chilled coffee blended with milk, ice, and chocolate syrup."
+    }
+]
