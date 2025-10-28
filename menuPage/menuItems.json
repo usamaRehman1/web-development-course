@@ -2,140 +2,140 @@
     {
         "menuName": "Cheese Omelette",
         "menuPrice": 450,
-        "menuURL": "https://your-domain.com/images/omelette.jpg",
+        "menuURL": "https://www.lisashealthykitchen.com/wp-content/uploads/Cottage-Cheese-Omelette.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Three-egg omelette stuffed with melted cheese, served with toast and butter."
     },
     {
         "menuName": "Paratha & Chai",
         "menuPrice": 250,
-        "menuURL": "https://your-domain.com/images/paratha-chai.jpg",
+        "menuURL": "https://miro.medium.com/1*sFSC-k_mQKGUzeFt1TQSYQ.jpeg",
         "menuType": "Breakfast",
         "menuDetail": "Crispy hot paratha served with a cup of traditional doodh patti chai."
     },
     {
         "menuName": "French Toast",
         "menuPrice": 400,
-        "menuURL": "https://your-domain.com/images/french-toast.jpg",
+        "menuURL": "https://www.allrecipes.com/thmb/GHsW45mTpy_2EFSjCNEPdeo7Tek=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-recipe-16895-fluffy-french-toast-hero-01-ddmfs-4x3-7fd61e054f2c4f0f868b7ab0dd8767ae.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Golden-brown French toast topped with honey and powdered sugar."
     },
     {
         "menuName": "Pancakes with Syrup",
         "menuPrice": 480,
-        "menuURL": "https://your-domain.com/images/pancakes.jpg",
+        "menuURL": "https://www.giallozafferano.com/images/260-26079/Pancakes-with-maple-syrup_1200x800.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Stack of fluffy pancakes served with butter and maple syrup."
     },
     {
         "menuName": "Halwa Puri",
         "menuPrice": 350,
-        "menuURL": "https://your-domain.com/images/halwa-puri.jpg",
+        "menuURL": "https://www.tasteatlas.com/images/dishes/a115b8b6115f4ea580599eb24a369408.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Traditional Pakistani breakfast combo with puri, chana, and sweet halwa."
     },
     {
         "menuName": "Aloo Paratha",
         "menuPrice": 300,
-        "menuURL": "https://your-domain.com/images/aloo-paratha.jpg",
+        "menuURL": "https://upload.wikimedia.org/wikipedia/commons/5/54/Aloo_Paratha_also_known_as_Batatay_Jo_Phulko.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Soft paratha stuffed with spiced mashed potatoes, served with yogurt."
     },
     {
         "menuName": "Boiled Eggs & Toast",
         "menuPrice": 320,
-        "menuURL": "https://your-domain.com/images/eggs-toast.jpg",
+        "menuURL": "https://www.kitchenkonfidence.com/wp-content/uploads/2015/03/Hard-Boiled-Egg-Toast-Harissa-Butter.jpg",
         "menuType": "Breakfast",
         "menuDetail": "Two perfectly boiled eggs served with crispy buttered toast."
     },
     {
         "menuName": "Chicken Biryani",
         "menuPrice": 600,
-        "menuURL": "https://your-domain.com/images/chicken-biryani.jpg",
+        "menuURL": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg",
         "menuType": "Lunch",
         "menuDetail": "Fragrant basmati rice cooked with spiced chicken and aromatic masala."
     },
     {
         "menuName": "Beef Karahi",
         "menuPrice": 950,
-        "menuURL": "https://your-domain.com/images/beef-karahi.jpg",
+        "menuURL": "https://rookiewithacookie.com/wp-content/uploads/2020/03/IMG_2108-1.jpg",
         "menuType": "Lunch",
         "menuDetail": "Tender beef chunks cooked in tomato-based gravy with green chilies and spices."
     },
     {
         "menuName": "Chicken Handi",
         "menuPrice": 850,
-        "menuURL": "https://your-domain.com/images/chicken-handi.jpg",
+        "menuURL": "https://www.indianrecipeinfo.com/wp-content/uploads/2021/12/Chicken-Handi-Recipe.jpg",
         "menuType": "Lunch",
         "menuDetail": "Creamy chicken curry cooked in a traditional clay handi for rich flavor."
     },
     {
         "menuName": "Mutton Korma",
         "menuPrice": 1200,
-        "menuURL": "https://your-domain.com/images/mutton-korma.jpg",
+        "menuURL": "https://www.sugarspicenmore.com/wp-content/uploads/2023/03/Lamb-Korma-5.jpg",
         "menuType": "Lunch",
         "menuDetail": "Slow-cooked mutton curry in a rich blend of yogurt, nuts, and spices."
     },
     {
         "menuName": "BBQ Platter",
         "menuPrice": 1300,
-        "menuURL": "https://your-domain.com/images/bbq-platter.jpg",
+        "menuURL": "https://i.ytimg.com/vi/cvYMSQQkits/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCd2KjvecizDKt6BAQuPeCky45_2A",
         "menuType": "Lunch",
         "menuDetail": "A mix of grilled chicken, beef seekh kebab, and malai boti served with naan."
     },
     {
         "menuName": "Grilled Chicken Sandwich",
         "menuPrice": 550,
-        "menuURL": "https://your-domain.com/images/chicken-sandwich.jpg",
+        "menuURL": "https://www.southernliving.com/thmb/kEdiYQOHkg0LQ642Mu0g9MrcLmk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Grilled_Chicken_Sandwich_011-11dc16cb9e24450e829911af04e5e426.jpg",
         "menuType": "Lunch",
         "menuDetail": "Grilled chicken breast with lettuce, mayo, and tomato on toasted bread."
     },
     {
         "menuName": "Chicken Pulao",
         "menuPrice": 550,
-        "menuURL": "https://your-domain.com/images/chicken-pulao.jpg",
+        "menuURL": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/021d144c10c84d9b91fdfaf8068ce39e.png",
         "menuType": "Lunch",
         "menuDetail": "Aromatic rice cooked with chicken broth, spices, and caramelized onions."
     },
     {
         "menuName": "Chocolate Shake",
         "menuPrice": 350,
-        "menuURL": "https://your-domain.com/images/chocolate-shake.jpg",
+        "menuURL": "https://static.toiimg.com/thumb/84170265.cms?imgsize=299797&width=800&height=800",
         "menuType": "Shakes",
         "menuDetail": "Rich and creamy chocolate milkshake topped with whipped cream."
     },
     {
         "menuName": "Strawberry Shake",
         "menuPrice": 330,
-        "menuURL": "https://your-domain.com/images/strawberry-shake.jpg",
+        "menuURL": "https://assets.epicurious.com/photos/647df8cad9749492c4d5d407/1:1/w_4506,h_4506,c_limit/StrawberryMilkshake_RECIPE_053123_3599.jpg",
         "menuType": "Shakes",
         "menuDetail": "Fresh strawberry blended with milk and ice cream for a sweet treat."
     },
     {
         "menuName": "Mango Shake",
         "menuPrice": 300,
-        "menuURL": "https://your-domain.com/images/mango-shake.jpg",
+        "menuURL": "https://aromaticessence.co/wp-content/uploads/2021/04/Mango_shake_1.jpg",
         "menuType": "Shakes",
         "menuDetail": "Thick mango shake made with real mango pulp and chilled milk."
     },
     {
         "menuName": "Banana Shake",
         "menuPrice": 280,
-        "menuURL": "https://your-domain.com/images/banana-shake.jpg",
+        "menuURL": "https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/banana_milkshake_73300_16x9.jpg.webp",
         "menuType": "Shakes",
         "menuDetail": "Classic banana shake blended with milk and a hint of vanilla."
     },
     {
         "menuName": "Oreo Shake",
         "menuPrice": 400,
-        "menuURL": "https://your-domain.com/images/oreo-shake.jpg",
+        "menuURL": "https://dancearoundthekitchen.com/wp-content/uploads/2021/10/DSC_8647-2.jpg",
         "menuType": "Shakes",
         "menuDetail": "Cookies and cream delight made with crushed Oreos and ice cream."
     },
     {
         "menuName": "Cold Coffee",
         "menuPrice": 370,
-        "menuURL": "https://your-domain.com/images/cold-coffee.jpg",
+        "menuURL": "https://www.heinens.com/content/uploads/2022/05/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg",
         "menuType": "Shakes",
         "menuDetail": "Chilled coffee blended with milk, ice, and chocolate syrup."
     }
