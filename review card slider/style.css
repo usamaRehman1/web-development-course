@@ -16,7 +16,7 @@
     width: 40%;
     text-align: center;
     margin: auto auto;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 #reviewCard {
@@ -87,4 +87,36 @@
 .fa-angle-right:hover {
     cursor: pointer;
     color: red;
+}
+
+
+/* Media curies handling */
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+    .mainHeading {
+        width: 40%;
+        margin-top: 100px;
+    }
+
+    #reviewCard {
+        width: 90%;
+        height: 600px;
+    }
+
+
+
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+    .mainHeading {
+        width: 40%;
+        margin-top: 100px;
+    }
+
+    #reviewCard {
+        width: 90%;
+        height: 600px;
+    }
+
 }
