@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Bud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Grocery Bud 🛒</h1>
+        <div id="task-container">
+            <input type="text" placeholder="Enter your grocery..." id="grocery">
+            <button onclick="handleChange()">Add Item</button>
+        </div>
+        <ul id="grocery-list">
+            <li>
+                <span class="listText">Eggs</span>
+                <span class="actions">
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </span>
+            </li>
+            <li>
+                <span class="listText">Milk</span>
+                <span class="actions">
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </span>
+            </li>
+            <li>
+                <span class="listText">Fish</span>
+                <span class="actions">
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-trash delete"></i>
+                </span>
+            </li>
+        </ul>
+
+        <button id="clear-btn">Clear Items</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
