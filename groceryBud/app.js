@@ -1,5 +1,3 @@
-
-
 const showPopUp = (_icon, _title) => {
     Swal.fire({
         icon: _icon,
@@ -9,34 +7,54 @@ const showPopUp = (_icon, _title) => {
 }
 
 const groceryList = document.querySelector("#grocery-list");
+const grocery = document.querySelector("#grocery");
+let flag = true;
+
 const handleChange = () => {
-    const grocery = document.querySelector("#grocery");
 
-    if (grocery.value.trim() == "") showPopUp("error", "Invalid input")
+    for (let i = 0; i < groceryList.children.length; i++) {
+        console.log("check", groceryList.children[i].children[0].textContent.toString())
+        if (groceryList.children[i].children[0].textContent.toString() == grocery.value.toString()) {
+            alert('The same task is already present in the todo list')
+            flag = false;
+            grocery.focus();
+            return
+        } else {
+            // console.log("task not present")
+        }
+    }
 
-    const li = document.createElement("li");
-    li.innerHTML = `<span class="listText">${grocery.value.trim()}</span>
-                        <span class="actions">
-                            <i class="fa-solid fa-pen-to-square edit" onclick="editBtn(this)"></i>
-                            <i class="fa-solid fa-trash delete" onclick="deleteBtn(this)"></i>
-                    </span>`
-    groceryList.prepend(li)
+    if (grocery.value.trim() != '' && flag) {
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="listText">${grocery.value.trim()}</span>
+                                <span class="actions">
+                                    <i class="fa-solid fa-pen-to-square edit" onclick="editBtn(this)"></i>
+                                    <i class="fa-solid fa-trash delete" onclick="deleteBtn(this)"></i>
+                            </span>`
+        groceryList.prepend(li)
 
-    document.querySelector("#clear-btn").style.display = "block"
-    grocery.value = ""
+        document.querySelector("#clear-btn").style.display = "block"
+
+        showPopUp("success", "Your work has been saved")
+        grocery.value = ""
+    } else {
+        showPopUp("error", 'Your task is not valid.\nPlease try again')
+    }
 }
 
 const editBtn = (e) => {
-    console.log(e.parentElement.previousElementSibling)
-
+    grocery.value = e.parentElement.previousElementSibling.innerText.toString();
+    grocery.focus();
+    e.parentElement.parentElement.remove();
 }
 
 const deleteBtn = (e) => {
     e.parentElement.parentElement.remove()
+    !groceryList.children.length && (document.querySelector("#clear-btn").style.display = "none")
 }
 
 const crearAll = () => {
-    [...groceryList.children].forEach( element => {
+    [...groceryList.children].forEach(element => {
         console.log(element)
         element.remove()
     });
