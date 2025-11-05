@@ -1,11 +1,14 @@
 let menuData = [];
 // --------------- menu Display ------------
 const menuDisplay = document.querySelector("#menuDisplay");
+// --------------- search bar --------------
+const searchItem = document.querySelector("#searchItem");
 // ---------- btns ------------------------
 const all = document.querySelector("#all");
 const breakFast = document.querySelector("#breakFast");
 const lunch = document.querySelector("#lunch");
 const shakes = document.querySelector("#shakes");
+const search = document.querySelector("#search");
 
 // --------------------- Display card func ---------------
 const displayCard = (menuData) => {
@@ -78,4 +81,21 @@ shakes.addEventListener("click", (event) => {
     classActiveHandler(shakes)
     const shakesMenu = menuData.filter(item => item.menuType == 'Shakes')
     displayCard(shakesMenu)
+})
+
+// -------------------------- Search Items ---------------
+
+search.addEventListener("click", () => {
+    all.style.display = "none"
+    breakFast.style.display = "none"
+    lunch.style.display = "none"
+    shakes.style.display = "none"
+    searchItem.style.display = "block"
+    if (searchItem.value.trim() != "") {
+        const findSearch = menuData.find(element => {
+            if (element.menuName.toLowerCase().toString() == searchItem.value.trim().toLowerCase().toString()) return true
+        })
+        console.log("findSearch", findSearch)
+        // displayCard(findSearch)
+    }
 })

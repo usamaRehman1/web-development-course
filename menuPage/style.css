@@ -75,3 +75,55 @@
     height: 100%;
     padding: 10px;
 }
+
+/* ------------------ searchInputBar ------------------ */
+#searchInputBar {
+    padding: 5px;
+}
+
+#searchItem{
+    font-size: 15px;
+    padding: 3px;
+    margin: 5px 2px;
+    display: none;
+}
+
+/* ----------------- */
+.select-menu {
+    position: relative;
+    width: 250px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+select:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Arrow */
+.select-menu:after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: brown;
+    font-size: 14px;
+}
