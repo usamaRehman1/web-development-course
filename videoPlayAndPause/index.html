@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Paly and Pause</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main-container {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+
+        #video {
+            width: 80%;
+            height: 80%;
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 100%;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <video src="./assets/beach.mp4" id="video"></video>
+        <div>
+            <button onclick="playPuseBtn()"><i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
