@@ -6,14 +6,14 @@ const showPopUp = (_icon, _title) => {
     });
 }
 
+
 const groceryList = document.querySelector("#grocery-list");
 const grocery = document.querySelector("#grocery");
-let flag = true;
-
 const handleChange = () => {
+    let flag = true;
 
     for (let i = 0; i < groceryList.children.length; i++) {
-        console.log("check", groceryList.children[i].children[0].textContent.toString())
+        // console.log("check", groceryList.children[i].children[0].textContent.toString())
         if (groceryList.children[i].children[0].textContent.toString() == grocery.value.toString()) {
             alert('The same task is already present in the todo list')
             flag = false;
@@ -23,6 +23,8 @@ const handleChange = () => {
             // console.log("task not present")
         }
     }
+
+    console.log(flag, grocery.value.trim())
 
     if (grocery.value.trim() != '' && flag) {
         const li = document.createElement("li");
@@ -39,6 +41,7 @@ const handleChange = () => {
         grocery.value = ""
     } else {
         showPopUp("error", 'Your task is not valid.\nPlease try again')
+        grocery.focus()
     }
 }
 
@@ -55,7 +58,7 @@ const deleteBtn = (e) => {
 
 const crearAll = () => {
     [...groceryList.children].forEach(element => {
-        console.log(element)
+        // console.log(element)
         element.remove()
     });
 
