@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-continer">
+        <div id="dice-game-container">
+
+            <div class="active" id="player1-container">
+                <h2 class="player1-name">Player 1</h2>
+                <h1 class="player-total-score">0</h1>
+                <div class="current-score-container">
+                    <p>Current</p>
+                    <p class="currScore">0</p>
+                </div>
+            </div>
+
+            <div id="player2-container">
+                <h2 class="player2-name">Player 2</h2>
+                <h1 class="player-total-score">0</h1>
+                <div class="current-score-container">
+                    <p>Current</p>
+                    <p class="currScore">0</p>
+                </div>
+            </div>
+
+            <div id="btns-container">
+                <button onclick="window.onload()">🔄 New Game</button>
+                <div id="dice-container">
+                    <img src="./assets/1.webp" alt="" id="diceImg">
+                </div>
+                <button id="rollDice">🎲 Roll Dice</button>
+                <button id="holdDice">🕹️ Hold Dice</button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
