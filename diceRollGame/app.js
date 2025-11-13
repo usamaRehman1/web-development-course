@@ -12,7 +12,7 @@ const rollDice = document.querySelector("#rollDice");
 //--------------- hold Dice --------------------
 const holdDice = document.querySelector("#holdDice");
 // ---------------- Winning Score --------------
-const winningScore = 30;
+const winningScore = 100;
 
 // ----------------- player container ----------------------
 const player1Container = document.querySelector("#player1-container")
@@ -41,11 +41,14 @@ window.onload = () => {
     playerTurn = true
 }
 
-const playerHoldHandler = (userIndex, changePLayerTurn, playerName) => {
+const playerHoldHandler = (userIndex, changePLayerTurn, winningPlayerName, losingPlayerName ) => {
     playerTotalScore[userIndex].textContent = Number(playerTotalScore[userIndex].textContent) + Number(currScore[userIndex].textContent)
 
     if (Number(playerTotalScore[userIndex].textContent) >= winningScore) {
-        alert(`${playerName.slice(0, 1).toUpperCase()}${playerName.slice(1)} won the game`);
+        alert(`${winningPlayerName.slice(0, 1).toUpperCase()}${winningPlayerName.slice(1)} won the game`);
+        let winUsersObj = { winner: winningPlayerName, loser: losingPlayerName, score: playerTotalScore[userIndex].textContent }
+        let getDataFromLocalStorage = JSON.parse(localStorage.getItem("winningUsers")) || []; 
+        localStorage.setItem("winningUsers", JSON.stringify([...getDataFromLocalStorage, winUsersObj]) )
         playerTotalScore[0].textContent = 0;
         playerTotalScore[1].textContent = 0;
         currScore[0].textContent = 0;
@@ -85,8 +88,8 @@ rollDice.addEventListener("click", () => {
 
 holdDice.addEventListener("click", () => {
     if (playerTurn) {
-        playerHoldHandler(0, !playerTurn, player1Name)
+        playerHoldHandler(0, !playerTurn, player1Name, player2Name)
     } else {
-        playerHoldHandler(1, !playerTurn, player2Name)
+        playerHoldHandler(1, !playerTurn, player2Name, player1Name)
     }
 })
