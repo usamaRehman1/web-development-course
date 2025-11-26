@@ -12,9 +12,12 @@ const search = document.querySelector("#search");
 
 // --------------------- Display card func ---------------
 const displayCard = (menuData) => {
-    menuData.filter(item => {
+
+    let cardArr = []
+    menuData.forEach(item => {
+        // console.log("item=>", item)
         let { menuName, menuPrice, menuURL, menuType, menuDetail } = item;
-        menuDisplay.innerHTML += `<div class="card">
+        let card = `<div class="card">
                 <div class="menuImg" style="background-image: url('${menuURL}')"></div>
                 <div id="menuDetail">
                         <div id="titleAndPrice" style="display: flex; justify-content: space-between;">
@@ -25,7 +28,10 @@ const displayCard = (menuData) => {
                         <p>${menuDetail}</p>
                     </div>
                 </div>`
+        cardArr.push(card)
     })
+    console.log("arr =>", cardArr)
+    menuDisplay.innerHTML = `${cardArr.join("")}`
 }
 
 // -------------------- Handle active class ----------------------
@@ -40,9 +46,6 @@ const classActiveHandler = (newIdClick) => {
 window.onload = async () => {
     fetch('./menuItems.json')
         .then(response => {
-            // if (!response.ok) {
-            //     throw new Error(`HTTP error! status: ${response.status}`);
-            // }
             return response.json();
         })
         .then(data => {
@@ -86,16 +89,18 @@ shakes.addEventListener("click", (event) => {
 // -------------------------- Search Items ---------------
 
 search.addEventListener("click", () => {
-    all.style.display = "none"
-    breakFast.style.display = "none"
-    lunch.style.display = "none"
-    shakes.style.display = "none"
     searchItem.style.display = "block"
+    document.querySelectorAll(".btn").forEach(item => {
+        item.classList.remove("active")
+    })
+
+    if (!searchItem.value) return menuDisplay.innerHTML = "search item not found..."
+
     if (searchItem.value.trim() != "") {
         const findSearch = menuData.find(element => {
             if (element.menuName.toLowerCase().toString() == searchItem.value.trim().toLowerCase().toString()) return true
         })
-        console.log("findSearch", findSearch)
-        // displayCard(findSearch)
+        if (!findSearch) return menuDisplay.innerHTML = "search item not found..."
+        displayCard([findSearch])
     }
 })

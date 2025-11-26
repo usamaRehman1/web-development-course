@@ -78,14 +78,22 @@
 
 /* ------------------ searchInputBar ------------------ */
 #searchInputBar {
-    padding: 5px;
+    /* padding: 5px; */
+    /* border: 2px solid red; */
+    margin-bottom: 5px;
+    display: flex;
 }
 
 #searchItem{
+    width: 100%;
+    /* border-radius: 50px; */
+    border: none;
+    border: 1px solid brown;
+    background-color: aliceblue;
     font-size: 15px;
-    padding: 3px;
+    padding: 12px;
     margin: 5px 2px;
-    display: none;
+    display: block;
 }
 
 /* ----------------- */
